@@ -1,4 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://YashChaudhary:LuCiFeR@cluster0.kvaf6.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "ksejdbvbsledbv"
-}
