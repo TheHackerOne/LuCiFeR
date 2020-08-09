@@ -12,6 +12,8 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import { useEffect } from 'react';
 import setAuthToken from './utils/setAuthToken';
+import Dashboard from './components/dashboard/Dashboard';
+import PrivateRoute from './components/routing/PrivateRoute';
 
 // This will only run when the user loads the application for the first time
 if (localStorage.token) {
@@ -36,6 +38,7 @@ const App = () => {
 						<Switch>
 							<Route exact path='/register' component={Register} />
 							<Route exact path='/login' component={Login} />
+							<PrivateRoute exact path='/dashboard' component={Dashboard}/>
 						</Switch>
 					</section>
 				</>
